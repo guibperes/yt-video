@@ -7,7 +7,7 @@
     "dev": "nodemon app.js"
   },
   "dependencies": {
-    "ytdl-core": "^0.29.2"
+    "ytdl-core": "^2.0.1"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
