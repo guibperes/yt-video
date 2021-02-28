@@ -3,11 +3,9 @@ const path = require('path')
 const ytdl = require('ytdl-core')
 
 const list = [
-  'https://www.youtube.com/watch?v=eHYQcKe1WQ4&feature=youtu.be',
-  'https://www.youtube.com/watch?v=69NxjBQNTIk&feature=youtu.be',
-  'https://www.youtube.com/watch?v=ay6rlFXfI8g&feature=youtu.be',
-  'https://www.youtube.com/watch?v=5fwonPrjQN8&feature=youtu.be',
-  'https://www.youtube.com/watch?v=_5KYB0hbRAI&feature=youtu.be'
+  'URL_1',
+  'URL_2',
+  'URL_N'
 ]
 
 function logger (message) {
