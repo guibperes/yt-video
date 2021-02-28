@@ -3,9 +3,11 @@ const path = require('path')
 const ytdl = require('ytdl-core')
 
 const list = [
-  'URL_1',
-  'URL_2',
-  'URL_N'
+  'https://www.youtube.com/watch?v=eHYQcKe1WQ4&feature=youtu.be',
+  'https://www.youtube.com/watch?v=69NxjBQNTIk&feature=youtu.be',
+  'https://www.youtube.com/watch?v=ay6rlFXfI8g&feature=youtu.be',
+  'https://www.youtube.com/watch?v=5fwonPrjQN8&feature=youtu.be',
+  'https://www.youtube.com/watch?v=_5KYB0hbRAI&feature=youtu.be'
 ]
 
 function logger (message) {
@@ -20,10 +22,7 @@ async function saveAll (list) {
     logger('Fetching video info')
 
     const info = await ytdl.getBasicInfo(url)
-    const videoName = info.description.split('\n\n')[0]
-      .trim()
-      .split(' ')
-      .join('_')
+    const videoName = info.videoDetails.title
 
     logger('Saving video on local folder')
 
